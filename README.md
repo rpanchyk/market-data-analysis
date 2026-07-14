@@ -290,10 +290,10 @@ python verify_data.py --config config.yml --tf h1
 python run_pipeline.py --symbol AUDCAD --tf h1 --compare
 ```
 
-## Contribution
-Feel free to create an issue or a pull request if any ideas.
+## Внесок
+Створюйте issue або pull request, якщо є ідеї.
 
-## Disclaimer
-The source code of this repository is provided AS-IS and WITH NO WARRANTY of any kind.
-Author and/or contributor are NOT responsible for any type of losses as a result of using source code, 
-compiled binaries or other outcomes related to this repository.
+## Відмова від відповідальності
+Початковий код цього репозиторію надається «ЯК Є» і БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ.
+Автор та/або контриб’ютори НЕ несуть відповідальності за будь-які збитки внаслідок використання
+початкового коду, скомпільованих бінарників чи інших результатів, пов’язаних із цим репозиторієм.
