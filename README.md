@@ -276,35 +276,10 @@ python verify_data.py --config config.yml --tf h1
 python run_pipeline.py --symbol AUDCAD --tf h1 --compare
 ```
 
-## Структура
+## Contribution
+Feel free to create an issue or a pull request if any ideas.
 
-```
-market-data-analysis/
-├── config.yml
-├── libs/
-│   ├── __init__.py
-│   ├── cli_args.py
-│   ├── config.py
-│   └── charts.py
-├── clean_data.py
-├── convert_m1.py
-├── analyze_trends_corrections.py
-├── export_presentation.py
-├── compare_symbols.py
-├── run_pipeline.py
-├── verify_data.py
-├── histogram_payload.py
-├── requirements.txt
-├── README.md
-├── data/
-│   ├── {SYMBOL}_m1.csv
-│   ├── {SYMBOL}_{tf}.csv
-│   └── {SYMBOL}_{tf}_trends_corrections.csv
-└── results/
-    ├── {SYMBOL}_{tf}_trends_corrections.csv
-    ├── {SYMBOL}_{tf}_trends_corrections.html
-    ├── {SYMBOL}_{tf}_trends_corrections.pdf
-    ├── compare_{tf}_correction_coverage.csv
-    ├── compare_{tf}_correction_coverage.html
-    └── compare_{tf}_correction_coverage.pdf
-```
+## Disclaimer
+The source code of this repository is provided AS-IS and WITH NO WARRANTY of any kind.
+Author and/or contributor are NOT responsible for any type of losses as a result of using source code, 
+compiled binaries or other outcomes related to this repository.
