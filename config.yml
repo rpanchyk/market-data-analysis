@@ -1,0 +1,35 @@
+# config.yml — налаштування пайплайну market-data-analysis
+# CLI-аргументи мають пріоритет над цим файлом (якщо передані явно).
+
+defaults:
+  tf: h1
+  days: 30                 # вікно макс. корекції (календарні дні)
+  threshold: 100           # ZigZag min swing, pips
+  top: 100                 # Top-N у export
+  pdf: true
+  skip_clean: false
+  skip_convert: false
+  compare: true            # після кожного запуску run_pipeline (в т.ч. одного символа / --all)
+
+# Порядок = порядок прогону при: python run_pipeline.py --all
+symbols:
+  AUDCAD: {}
+  AUDNZD: {}
+  EURUSD: {}
+  GBPUSD: {}
+  NZDCAD: {}
+  USDJPY: {}
+  XAUUSD:
+    threshold: 2000        # $20; для FX лишається defaults.threshold=100
+    # days: 30
+    # top: 100
+    # tf: h1
+    # pip_size: 0.01       # опційно; інакше libs.cli_args.pip_size()
+
+paths:
+  data: data
+  results: results
+
+compare:
+  pdf: true
+  # symbols: null          # null = усі з секції symbols, що мають trends CSV
